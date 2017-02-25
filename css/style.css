@@ -1,0 +1,186 @@
+*{
+    
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    font-family: "Arial", sans-serif;
+    background: #e9f0f5;
+    
+}
+
+p{
+    margin: 10px 0;
+}
+
+.container{
+    width: 940px;
+    overflow: auto;
+    margin: auto;
+}
+
+
+header{
+    
+    background: #5e6482;
+    color: white;
+    height: 70px;
+    text-align: center;
+    padding-top:20px; 
+}
+
+
+footer{
+    background: #5e6482;
+    height: 40px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    
+}
+
+#timeline{
+    background: url(../img/line.png) repeat-y 50% 0;
+    min-height: 700px;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+
+
+.tl-block{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 20px;
+}
+
+.tl-year{
+    background: url(../img/point-big.png) no-repeat 50% 0;
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+.tl-year div{
+    padding-top:25px;
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    
+}
+
+.tl-event{
+    background: url(../img/point-small.png) no-repeat top center;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    visibility: visible;
+    --webkit-animation:fade;
+    --webkit-animation-duration:2s;
+}
+
+@-webkit-keyframes fade{
+    0%{opacity:0}
+    100%{opacity: 1}
+}
+
+.tl-event > div{
+    width: 45%;
+    position:relative;
+}
+
+
+.tl-event div div {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    
+}
+
+
+.tl-event div.event-r{
+    
+    float: right;
+    background: url(../img/arrow-left.png) no-repeat 0 0;
+    
+}
+
+
+.tl-event div.event-l{
+    float: left;
+    background: url(../img/arrow-right.png) no-repeat 0 0; 
+}
+
+
+.tl-event div.event-r div{
+    margin-left: 20px;
+}
+
+.tl-event time{
+    background: #c03b44;
+    color: white;
+    padding: 7px;
+    font-size: 12px;
+    border-radius: 15px;
+}
+
+@media(max-width:768px){
+    .container{
+        
+        width:95%;}
+    
+    header{
+        height: 50px;
+    }
+    
+    #timeline{
+        background: url(../img/line.png) repeat-y 30px 0;
+        
+    }
+    
+    .tl-year{
+    background: url(../img/point-big.png) no-repeat 0 0;
+    display: block;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: 0;
+    margin-top: 20px;
+    position: relative;
+    }
+    
+    .tl-event{
+    background: url(../img/point-small.png) 16px 0 no-repeat;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    visibility: visible;
+}
+    
+    .tl-event div{
+        width: 85%;
+        position: relative;
+    }
+    
+    .tl-event div.event-l{
+    float: right;
+    background: url(../img/arrow-left.png) no-repeat 0 0; 
+}
+
+    .tl-event div{
+    margin-left: 20px;
+        margin-right: 0px;
+}
+
+    
+}
